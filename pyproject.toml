@@ -9,7 +9,12 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.105.0"
 uvicorn = {extras = ["standard"], version = "^0.25.0"}
+sqlalchemy = "^2.0.23"
+asyncpg = "^0.29.0"
+pydantic-settings = "^2.1.0"
 
+[tool.poetry.scripts]
+app = "lkeep_fastapi.main:start"
 
 [build-system]
 requires = ["poetry-core"]
