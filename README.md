@@ -1,7 +1,5 @@
 # Сервис сокращения ссылок на FastAPI и Vue.js
 
-[![wakatime](https://wakatime.com/badge/github/proDreams/lkeep_fastapi_vue.svg)](https://wakatime.com/badge/github/proDreams/lkeep_fastapi_vue)
-
 ## Описание:
 
 ...
