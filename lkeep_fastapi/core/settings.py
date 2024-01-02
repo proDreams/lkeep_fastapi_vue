@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-class Settings(BaseSettings):
+class DBSettings(BaseSettings):
     NAME_DB: str = os.environ.get("NAME_DB")
     USER_DB: str = os.environ.get("USER_DB")
     PASSWORD_DB: str = os.environ.get("PASSWORD_DB")
@@ -14,6 +14,10 @@ class Settings(BaseSettings):
     PORT: int = int(os.environ.get("PORT"))
     ECHO: bool = bool(os.environ.get("ECHO"))
     URL: str = f"postgresql+asyncpg://{USER_DB}:{PASSWORD_DB}@{HOST}:{PORT}/{NAME_DB}"
+
+
+class Settings(BaseSettings):
+    db_settings: DBSettings = DBSettings()
 
 
 settings = Settings()

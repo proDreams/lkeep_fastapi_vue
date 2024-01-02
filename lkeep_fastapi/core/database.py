@@ -32,4 +32,4 @@ class Database:
         await session.close()
 
 
-database = Database(url=settings.URL, echo=settings.ECHO)
+database = Database(url=settings.db_settings.URL, echo=settings.db_settings.ECHO)
