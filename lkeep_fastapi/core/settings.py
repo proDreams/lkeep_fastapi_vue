@@ -20,6 +20,7 @@ class Settings(BaseSettings):
     db_settings: DBSettings = DBSettings()
     REDIS_HOST: str = os.environ.get("REDIS_HOST")
     REDIS_PORT: int = int(os.environ.get("REDIS_PORT"))
+    SECRET_KEY: str = os.environ.get("SECRET_KEY")
 
 
 settings = Settings()
