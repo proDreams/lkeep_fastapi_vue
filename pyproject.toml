@@ -7,14 +7,14 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
-fastapi = "^0.105.0"
-uvicorn = {extras = ["standard"], version = "^0.25.0"}
+fastapi = "^0.109.2"
+uvicorn = {extras = ["standard"], version = "^0.27.0.post1"}
 sqlalchemy = "^2.0.23"
 asyncpg = "^0.29.0"
 pydantic-settings = "^2.1.0"
-fastapi-users = {extras = ["redis"], version = "^12.1.2"}
+fastapi-users = {extras = ["redis", "sqlalchemy"], version = "^12.1.2"}
 alembic = "^1.13.1"
-black = "^23.12.1"
+black = "^24.1.1"
 
 [tool.poetry.scripts]
 app = "lkeep_fastapi.main:start"
