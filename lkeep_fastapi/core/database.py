@@ -7,7 +7,7 @@ from sqlalchemy.ext.asyncio import (
     AsyncSession,
 )
 
-from settings import settings
+from lkeep_fastapi.core.settings import settings
 
 
 class Database:

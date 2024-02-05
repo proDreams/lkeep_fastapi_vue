@@ -25,7 +25,13 @@
     poetry install
     ```
 5. Создать `.env-файл` и прописать в нём подключение к PostgreSQL.
-6. Запустить проект:
+6. Создать и применить миграции:
+   ```bash
+   alembic revision --autogenerate -m "Create User Table"
+   
+   alembic upgrade head 
+   ```
+7. Запустить проект:
    ```bash
    poetry run app
    ```
